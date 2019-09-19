@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Activity.UserProfile">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Update Your Details Here"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter Full name" />
+
+        <EditText
+            android:id="@+id/oldPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="old Password" />
+
+        <EditText
+            android:id="@+id/newPwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter New Password" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter Email ID" />
+
+        <EditText
+            android:id="@+id/pno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Enter Phone Number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:text="Update"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_shape"
+                android:text="Cancel"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
