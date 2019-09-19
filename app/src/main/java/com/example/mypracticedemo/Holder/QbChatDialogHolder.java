@@ -13,6 +13,7 @@ public class QbChatDialogHolder {
    private static QbChatDialogHolder instance;
    private HashMap<String,QBChatDialog> qbChatDialogHashMap;
 
+
     public QbChatDialogHolder()
     {
         this.qbChatDialogHashMap = new HashMap<>();

@@ -18,6 +18,7 @@ public class QBChatMessagesHolder {
         {
             if (instance == null)
                 instance = new QBChatMessagesHolder();
+
             qbChatMessagesHolder = instance;
         }
         return qbChatMessagesHolder;
